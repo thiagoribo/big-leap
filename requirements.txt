@@ -1,0 +1,4 @@
+google-ads>=33.0.0
+google-auth-oauthlib>=1.2.0
+PyYAML>=6.0
+pytest>=8.0

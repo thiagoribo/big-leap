@@ -1,0 +1,27 @@
+# Limites usados pelos alertas. Ajuste conforme a meta da Big Leap.
+
+# CPA alvo na moeda da conta. Se null, usa o CPA médio da conta nos últimos 28 dias.
+target_cpa: null
+
+# Palavra-chave / termo de busca sem conversão gastando mais que N x CPA alvo.
+keyword_no_conv_spend_x_cpa: 1.5
+search_term_no_conv_spend_x_cpa: 1.0
+# Gasto mínimo absoluto para considerar (evita ruído quando o CPA é baixo).
+min_spend_for_alert: 50
+
+# Palavra-chave com CPA acima de N x CPA alvo.
+keyword_high_cpa_x: 2.0
+
+# Quality Score igual ou menor que isso, com gasto relevante.
+low_quality_score: 4
+
+# Parcela de impressão perdida por orçamento (0.2 = 20%).
+budget_lost_is: 0.2
+
+# Semana contra semana.
+wow_conversions_drop: 0.4   # queda de 40% nas conversões
+wow_cpa_increase: 0.3       # CPA 30% mais caro
+wow_min_conversions: 5      # só compara se a semana anterior teve ao menos isso
+
+# Tracking: dias seguidos sem conversão enquanto a média diária (14 dias) era >= 1.
+tracking_zero_days: 2
